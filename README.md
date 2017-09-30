@@ -1,0 +1,2 @@
+# macSubstrate
+Substrate for macOS
