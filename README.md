@@ -27,7 +27,7 @@ Moreover, macSubstrate provides a GUI app to make injection much easier. You can
 
     *(step 3 and step 4 can be switched)*
 
-    Once a plugin is installed by macSubstrate, it will take effect immediately. But if you want it to work after restarting your mac, you need to allow macSubstrate to automatically launch at login.
+    Once a plugin is installed by macSubstrate, it will take effect immediately. But if you want it to work whenever the target app is relaunched or macOS is restarted, you need to keep macSubstrate running and allow it to automatically launch at login.
 
 5. uninstall a plugin by macSubstrate when you do not need it anymore.
 
