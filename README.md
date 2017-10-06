@@ -1,8 +1,6 @@
 # macSubstrate - Substrate for macOS #
 
-<p align="center">
-  <img alt="macSubstrate" src="https://github.com/wzqcongcong/macSubstrate/blob/master/sketch/icon.png"/>
-</p>
+<p align="center"><img alt="macSubstrate" src="sketch/icon.png"/></p>
 
 ### What is macSubstrate
 
