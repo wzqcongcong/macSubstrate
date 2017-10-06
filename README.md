@@ -1,5 +1,7 @@
 # macSubstrate - Substrate for macOS #
 
+![macSubstrate](sketch/icon.png)
+
 ### What is macSubstrate
 
 **macSubstrate** is a platform for interprocess code injection on macOS, with the similar function to [Cydia Substrate](http://www.cydiasubstrate.com/) on iOS.
