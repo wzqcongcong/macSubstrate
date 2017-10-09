@@ -40,7 +40,7 @@ macSubstrate supports plugins of **.bundle** or **.framework**, so you just need
 * **AuthorName**: author name of the plugin.
 * **AuthorEmail**: author email of the plugin.
 
-Please check the demo plugin for details.
+Please check the demo plugin [1](https://github.com/wzqcongcong/macSubstrate/tree/master/macSubstratePluginDemo) and [2](https://github.com/wzqcongcong/macSubstrate/tree/master/macSubstratePluginDemo2) for details.
 
 ### Security
 
