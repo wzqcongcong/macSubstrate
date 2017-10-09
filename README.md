@@ -45,7 +45,7 @@ Please check the demo plugins [demo.bundle](macSubstratePluginDemo) and [demo.fr
 ### Security
 
 1. SIP is a new security policy on macOS, which will help to keep you away from potential security risk. Disable it means you will lose the protection from SIP.
-2. If you install a plugin from a developer, you should be responsible for the security of the plugin. If you do not trust it, please do not install it. macSubstrate will help to verify the codesign of a plugin, and help to scan it using [VirusTotal](https://www.virustotal.com). But anyway, macSubstrate is just a tool, and it is your choice to decide what plugin to install.
+2. If you install a plugin from a developer, you should be responsible for the security of the plugin. If you do not trust it, please do not install it. macSubstrate will help to verify the code signature of a plugin, and I suggest you to scan it using [VirusTotal](https://www.virustotal.com). Anyway, macSubstrate is just a tool, and it is your choice to decide what plugin to install.
 
 ### Thanks
 
