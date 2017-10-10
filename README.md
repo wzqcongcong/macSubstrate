@@ -21,8 +21,15 @@ Moreover, macSubstrate provides a GUI app to make injection much easier. You can
 ### Usage
 
 1. download and launch the macSubstrate app.
+
+	![StatusBar](screenshot/StatusBar.png)
+
 2. grant authorization if needed.
+
 3. install a plugin by importing or dragging into macSubstrate.
+
+	![ToInstall](screenshot/ToInstall.png)
+
 4. launch the target app.
 
     *(step 3 and step 4 can be switched)*
@@ -30,6 +37,8 @@ Moreover, macSubstrate provides a GUI app to make injection much easier. You can
     Once a plugin is installed by macSubstrate, it will take effect immediately. But if you want it to work whenever the target app is relaunched or macOS is restarted, you need to keep macSubstrate running and allow it to automatically launch at login.
 
 5. uninstall a plugin by macSubstrate when you do not need it anymore.
+
+	![Installed](screenshot/Installed.png)
 
 ### Plugin
 
