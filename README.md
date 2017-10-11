@@ -25,7 +25,7 @@
 * [Why should disable SIP](https://developer.apple.com/library/content/releasenotes/MacOSX/WhatsNewInOSX/Articles/MacOSX10_11.html)
 
     > `System Integrity Protection is a new security policy that applies to every running process, including privileged code and code that runs out of the sandbox. The policy extends additional protections to components on disk and at run-time, only allowing system binaries to be modified by the system installer and software updates. Code injection and runtime attachments to system binaries are no longer permitted.`
-    
+
 ---
 
 ### Usage
@@ -49,7 +49,7 @@
 5. uninstall a plugin when you do not need it anymore.
 
 	![Installed](screenshot/Installed.png)
-	
+
 ---
 
 ### Plugin
@@ -71,6 +71,12 @@ Please check the demo plugins [demo.bundle](macSubstratePluginDemo) and [demo.fr
 
 1. SIP is a new security policy on macOS, which will help to keep you away from potential security risk. Disable it means you will lose the protection from SIP.
 2. If you install a plugin from a developer, you should be responsible for the security of the plugin. If you do not trust it, please do not install it. macSubstrate will help to verify the code signature of a plugin, and I suggest you to scan it using [VirusTotal](https://www.virustotal.com). Anyway, macSubstrate is just a tool, and it is your choice to decide what plugin to install.
+
+---
+
+### License
+
+macSubstrate is released under the [MIT](https://en.wikipedia.org/wiki/MIT_License) license. See [LICENSE](LICENSE) for details.
 
 ---
 
