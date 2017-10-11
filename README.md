@@ -10,9 +10,9 @@
 
 * No more work after the target app is updated.
 
-* Loading plugins automatically whenever the target app is relaunched.
-
 * Super easy to install or uninstall a plugin.
+
+* Loading plugins automatically whenever the target app is relaunched.
 
 * Providing a GUI app to make injection much easier.
 
