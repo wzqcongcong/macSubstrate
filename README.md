@@ -30,7 +30,7 @@
 
 ### Usage
 
-1. [download](https://github.com/wzqcongcong/macSubstrate/releases/latest) and launch the macSubstrate app.
+1. [download](https://github.com/wzqcongcong/macSubstrate/releases/latest) macSubstrate, put it into `/Applications` and launch.
 
 	![StatusBar](screenshot/StatusBar.png)
 
