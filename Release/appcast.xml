@@ -16,8 +16,8 @@
             </description>
             <enclosure
                 url="https://github.com/wzqcongcong/macSubstrate/releases/download/1.0/macSubstrate.app.zip"
-                sparkle:version="2.0.0"
-                sparkle:shortVersionString="2.0.0"
+                sparkle:version="1.0.0"
+                sparkle:shortVersionString="1.0.0"
             />
             <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
         </item>
