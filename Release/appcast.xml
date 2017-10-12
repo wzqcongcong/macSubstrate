@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>macSubstrate</title>
+        <link>https://raw.githubusercontent.com/wzqcongcong/macSubstrate/master/Release/appcast.xml</link>
+        <description>macSubstrate Release Notes</description>
+        <language>en</language>
+        <item>
+            <title>macSubstrate 1.0.0</title>
+            <description>
+                <![CDATA[
+                    <ul>
+                        <li>Hello World :)</li>
+                    </ul>
+                ]]>    
+            </description>
+            <enclosure
+                url="https://github.com/wzqcongcong/macSubstrate/releases/download/1.0/macSubstrate.app.zip"
+                sparkle:version="2.0.0"
+                sparkle:shortVersionString="2.0.0"
+            />
+            <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
+        </item>
+    </channel>
+</rss>
