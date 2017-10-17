@@ -65,6 +65,12 @@ macSubstrate supports plugins of **`.bundle`** or **`.framework`**, so you just 
 
 Please check the demo plugins [demo.bundle](macSubstratePluginDemo) and [demo.framework](macSubstratePluginDemo2) for details.
 
+I also make a [plugin for WeChat](Plugins/macSubstratePluginWeChat.bundle.zip):
+* Send you a notification when you receive a *HongBao* message.
+* Anti-recall message and send you a notification.
+
+Welcome pull requests of your own plugins to [Plugins](Plugins) :)
+
 ---
 
 ### Security
