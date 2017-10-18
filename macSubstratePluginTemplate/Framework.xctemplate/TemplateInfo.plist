@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.gokustudio.macSubstratePluginFramework</string>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.frameworkBase</string>
+		<string>com.apple.dt.unit.languageChoice</string>
+		<string>com.apple.dt.unit.osxBase</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+	<string>This template builds a framework plugin for macSubstrate.</string>
+	<key>SortOrder</key>
+	<integer>2</integer>
+	<key>AssociatedTargetSpecification</key>
+	<dict>
+		<key>PopUpTitle</key>
+		<string>Embed in Application:</string>
+		<key>PopUpDescription</key>
+		<string>The application target that will host this new framework. The application will be set up to link to and embed the new framework.</string>
+		<key>AllowableProductTypes</key>
+		<array>
+			<string>com.apple.product-type.application</string>
+		</array>
+		<key>AllowablePlatforms</key>
+		<array>
+			<string>com.apple.platform.macosx</string>
+		</array>
+		<key>AssociatedTargetIsDependent</key>
+		<true/>
+		<key>AssociatedTargetNeedsProductBuildPhaseInjection</key>
+		<true/>
+	</dict>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.cocoaLibraryOrFrameworkTarget</string>
+			<key>SharedSettings</key>
+			<dict>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/../Frameworks @loader_path/Frameworks</string>
+				<key>FRAMEWORK_VERSION</key>
+				<string>A</string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+			</dict>
+		</dict>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>hasUnitTests</string>
+			<key>Name</key>
+			<string>Include Unit Tests</string>
+			<key>NotPersisted</key>
+			<false/>
+			<key>SortOrder</key>
+			<integer>100</integer>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>true</string>
+			<key>Units</key>
+			<dict>
+				<key>true</key>
+				<dict>
+					<key>Components</key>
+					<array>
+						<dict>
+							<key>Identifier</key>
+							<string>com.apple.dt.unit.cocoaFrameworkUnitTestBundle</string>
+							<key>Name</key>
+							<string>___PACKAGENAME___Tests</string>
+						</dict>
+					</array>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>TargetAppBundleID</string>
+			<key>Name</key>
+			<string>Plugin Target App Bundle ID:</string>
+			<key>Description</key>
+			<string>The target app bundle identifier of this plugin</string>
+			<key>Required</key>
+			<true/>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>Nodes</key>
+	<array>
+		<string>Info.plist:macSubstratePlugin</string>
+		<string>main.m</string>
+		<string>Hook/CaptainHook.h</string>
+	</array>
+	<key>Definitions</key>
+	<dict>
+		<key>___PACKAGENAME___.h</key>
+		<dict>
+			<key>TargetIdentifiers</key>
+			<array>
+				<string>com.apple.dt.cocoaLibraryOrFrameworkTarget</string>
+			</array>
+			<key>BuildAttributes</key>
+			<array>
+				<string>Public</string>
+			</array>
+		</dict>
+		<key>Info.plist:macSubstratePlugin</key>
+		<string>&lt;key&gt;macSubstratePlugin&lt;/key&gt;
+&lt;dict&gt;
+	&lt;key&gt;TargetAppBundleID&lt;/key&gt;
+	&lt;string&gt;___VARIABLE_TargetAppBundleID___&lt;/string&gt;
+	&lt;key&gt;Description&lt;/key&gt;
+	&lt;string&gt;&lt;/string&gt;
+	&lt;key&gt;AuthorName&lt;/key&gt;
+	&lt;string&gt;&lt;/string&gt;
+	&lt;key&gt;AuthorEmail&lt;/key&gt;
+	&lt;string&gt;&lt;/string&gt;
+&lt;/dict&gt;
+</string>
+		<key>main.m</key>
+		<dict>
+			<key>Path</key>
+			<string>main.m</string>
+		</dict>
+		<key>Hook/CaptainHook.h</key>
+		<dict>
+			<key>Path</key>
+			<string>CaptainHook.h</string>
+			<key>Group</key>
+			<string>Hook</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

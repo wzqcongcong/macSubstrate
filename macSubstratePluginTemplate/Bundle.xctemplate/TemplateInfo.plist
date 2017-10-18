@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.gokustudio.macSubstratePluginBundle</string>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.bundleBase</string>
+		<string>com.apple.dt.unit.osxBase</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+	<string>This template builds a bundle plugin for macSubstrate.</string>
+	<key>SortOrder</key>
+	<integer>1</integer>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>ProductType</key>
+			<string>com.apple.product-type.bundle</string>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.bundleTarget</string>
+			<key>SharedSettings</key>
+			<dict>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Bundles</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>___VARIABLE_bundleExtension___</string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+			</dict>
+			<key>BuildPhases</key>
+			<array>
+				<dict>
+					<key>Class</key>
+					<string>Sources</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>Frameworks</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>Resources</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>bundleExtension</string>
+			<key>Name</key>
+			<string>Bundle Extension:</string>
+			<key>Description</key>
+			<string>The path extension to use for this bundle</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>bundle</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>TargetAppBundleID</string>
+			<key>Name</key>
+			<string>Plugin Target App Bundle ID:</string>
+			<key>Description</key>
+			<string>The target app bundle identifier of this plugin</string>
+			<key>Required</key>
+			<true/>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>Nodes</key>
+	<array>
+		<string>Info.plist:bundle</string>
+		<string>Info.plist:NSHumanReadableCopyright</string>
+		<string>Info.plist:macSubstratePlugin</string>
+		<string>main.m</string>
+		<string>Hook/CaptainHook.h</string>
+	</array>
+	<key>Definitions</key>
+	<dict>
+		<key>Info.plist:bundle</key>
+		<string>&lt;key&gt;CFBundlePackageType&lt;/key&gt;
+&lt;string&gt;BNDL&lt;/string&gt;
+&lt;key&gt;NSPrincipalClass&lt;/key&gt;
+&lt;string&gt;&lt;/string&gt;
+</string>
+		<key>Info.plist:macSubstratePlugin</key>
+		<string>&lt;key&gt;macSubstratePlugin&lt;/key&gt;
+&lt;dict&gt;
+	&lt;key&gt;TargetAppBundleID&lt;/key&gt;
+	&lt;string&gt;___VARIABLE_TargetAppBundleID___&lt;/string&gt;
+	&lt;key&gt;Description&lt;/key&gt;
+	&lt;string&gt;&lt;/string&gt;
+	&lt;key&gt;AuthorName&lt;/key&gt;
+	&lt;string&gt;&lt;/string&gt;
+	&lt;key&gt;AuthorEmail&lt;/key&gt;
+	&lt;string&gt;&lt;/string&gt;
+&lt;/dict&gt;
+</string>
+		<key>main.m</key>
+		<dict>
+			<key>Path</key>
+			<string>main.m</string>
+		</dict>
+		<key>Hook/CaptainHook.h</key>
+		<dict>
+			<key>Path</key>
+			<string>CaptainHook.h</string>
+			<key>Group</key>
+			<string>Hook</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
