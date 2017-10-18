@@ -1,0 +1,18 @@
+{
+  "images" : [
+    {
+      "idiom" : "mac",
+      "filename" : "22.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "mac",
+      "filename" : "44.png",
+      "scale" : "2x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

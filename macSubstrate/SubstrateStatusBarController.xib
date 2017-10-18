@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SubstrateStatusBarController">
+            <connections>
+                <outlet property="menuItemCheckForUpdates" destination="emV-WY-lsm" id="8wg-5q-d9O"/>
+                <outlet property="menuItemInstalled" destination="GWi-Bc-wxs" id="48U-Nl-d2N"/>
+                <outlet property="menuItemQuit" destination="fY3-XX-vaP" id="dVb-gv-puu"/>
+                <outlet property="menuItemSettings" destination="dbi-wn-Tmb" id="SHM-4z-kmd"/>
+                <outlet property="menuItemToInstall" destination="4bl-iH-QNh" id="I3p-iM-WQA"/>
+                <outlet property="statusBarMenu" destination="qhp-17-WiG" id="cFJ-fN-leH"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView hidden="YES" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <point key="canvasLocation" x="150" y="21"/>
+        </customView>
+        <menu title="Status Bar Menu" id="qhp-17-WiG" userLabel="Status Bar Menu">
+            <items>
+                <menuItem title="Install a Plugin" id="4bl-iH-QNh">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="clickMenuItemToInstall:" target="-2" id="Xdr-f5-GCk"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Installed Plugins" id="GWi-Bc-wxs">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="clickMenuItemInstalled:" target="-2" id="vZS-3h-i3M"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="sQf-ei-SVp"/>
+                <menuItem title="Settings" id="dbi-wn-Tmb">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="clickMenuItemSettings:" target="-2" id="gXw-Kb-0uu"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="no5-R2-Man"/>
+                <menuItem title="Check for Updates..." id="emV-WY-lsm">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="clickMenuItemCheckForUpdates:" target="-2" id="bAW-le-eAy"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="gkH-wk-KrE"/>
+                <menuItem title="Quit macSubstrate" id="fY3-XX-vaP">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="clickMenuItemQuit:" target="-2" id="31z-jy-tAd"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="-15" y="22"/>
+        </menu>
+    </objects>
+</document>

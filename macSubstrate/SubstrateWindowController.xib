@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SubstrateWindowController">
+            <connections>
+                <outlet property="toolbarItemInstalled" destination="f6o-k3-gQL" id="K8c-xN-J35"/>
+                <outlet property="toolbarItemSettings" destination="onM-Ig-hzZ" id="wW0-zk-Fgk"/>
+                <outlet property="toolbarItemToInstall" destination="gDu-XH-UCR" id="lgP-Cw-odV"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="macSubstrate" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <view key="contentView" wantsLayer="YES" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </view>
+            <toolbar key="toolbar" implicitIdentifier="629BBF35-F727-4F3F-A3C8-85A6A2337212" autosavesConfiguration="NO" allowsUserCustomization="NO" displayMode="iconAndLabel" sizeMode="regular" id="TdJ-OD-lrD">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="DD53E952-78DC-4E05-B9A9-D24C49DB8EB4" label="Install a Plugin" paletteLabel="Install a Plugin" tag="-1" image="ToInstall" selectable="YES" id="gDu-XH-UCR" userLabel="Install a Plugin">
+                        <connections>
+                            <action selector="clickToolbarItemToInstall:" target="-2" id="2S8-C2-2ih"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="01926672-5A40-4818-ADE7-F5340D5D58B1" label="Installed Plugins" paletteLabel="Installed Plugins" tag="-1" image="Installed" selectable="YES" id="f6o-k3-gQL" userLabel="Installed Plugins">
+                        <connections>
+                            <action selector="clickToolbarItemInstalled:" target="-2" id="ylh-yL-C5Y"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="F260F937-232D-46C1-9001-47EE1777772C" label="Settings" paletteLabel="Settings" tag="-1" image="Settings" selectable="YES" id="onM-Ig-hzZ" userLabel="Settings">
+                        <connections>
+                            <action selector="clickToolbarItemSettings:" target="-2" id="bTd-6v-1xD"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="Zp0-mf-rMz"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="r6e-hp-ZgQ"/>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="r6e-hp-ZgQ"/>
+                    <toolbarItem reference="gDu-XH-UCR"/>
+                    <toolbarItem reference="f6o-k3-gQL"/>
+                    <toolbarItem reference="onM-Ig-hzZ"/>
+                    <toolbarItem reference="r6e-hp-ZgQ"/>
+                </defaultToolbarItems>
+            </toolbar>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="273"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="Installed" width="32" height="32"/>
+        <image name="Settings" width="32" height="32"/>
+        <image name="ToInstall" width="32" height="32"/>
+    </resources>
+</document>
