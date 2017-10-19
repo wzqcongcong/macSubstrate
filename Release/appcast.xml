@@ -6,6 +6,22 @@
         <description>macSubstrate Release Notes</description>
         <language>en</language>
         <item>
+            <title>macSubstrate 1.0.3</title>
+            <description>
+                <![CDATA[
+                    <ul>
+                        <li>fix bug: failed to get the target app name in some cases.</li>
+                    </ul>
+                ]]>    
+            </description>
+            <enclosure
+                url="https://github.com/wzqcongcong/macSubstrate/releases/download/1.0.3/macSubstrate.app.zip"
+                sparkle:version="1.0.3"
+                sparkle:shortVersionString="1.0.3"
+            />
+            <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
+        </item>
+        <item>
             <title>macSubstrate 1.0.2</title>
             <description>
                 <![CDATA[
