@@ -14,6 +14,7 @@
 			);
 			dependencies = (
 				85148F381F8DB1BF005F8C10 /* PBXTargetDependency */,
+				851C15741F98B6CA00E15553 /* PBXTargetDependency */,
 			);
 			name = macSubstratePlugins;
 			productName = macSubstratePlugins;
@@ -23,6 +24,8 @@
 /* Begin PBXBuildFile section */
 		85148F3D1F8DB32C005F8C10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85148F3C1F8DB32C005F8C10 /* main.m */; };
 		85148F421F8DC9B4005F8C10 /* SubstratePluginWeChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 85148F411F8DC9B4005F8C10 /* SubstratePluginWeChat.m */; };
+		851C15711F98A52D00E15553 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 851C15701F98A52D00E15553 /* main.mm */; };
+		853D6C9D1F99F7E5000E063D /* SubstratePluginQQ.mm in Sources */ = {isa = PBXBuildFile; fileRef = 853D6C9C1F99F7E5000E063D /* SubstratePluginQQ.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +35,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 85148F2C1F8DB16E005F8C10;
 			remoteInfo = macSubstratePluginWeChat;
+		};
+		851C15731F98B6CA00E15553 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85148F121F8DB0A9005F8C10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 851C15691F98A4DA00E15553;
+			remoteInfo = macSubstratePluginQQ;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -43,10 +53,23 @@
 		85148F3C1F8DB32C005F8C10 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		85148F401F8DC9B4005F8C10 /* SubstratePluginWeChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubstratePluginWeChat.h; sourceTree = "<group>"; };
 		85148F411F8DC9B4005F8C10 /* SubstratePluginWeChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubstratePluginWeChat.m; sourceTree = "<group>"; };
+		851C156A1F98A4DA00E15553 /* macSubstratePluginQQ.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = macSubstratePluginQQ.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		851C156C1F98A4DA00E15553 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		851C15701F98A52D00E15553 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		851C15721F98A5AC00E15553 /* QQHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQHeader.h; sourceTree = "<group>"; };
+		853D6C9B1F99F7E5000E063D /* SubstratePluginQQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubstratePluginQQ.h; sourceTree = "<group>"; };
+		853D6C9C1F99F7E5000E063D /* SubstratePluginQQ.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SubstratePluginQQ.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		85148F2A1F8DB16E005F8C10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		851C15671F98A4DA00E15553 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -61,6 +84,7 @@
 			children = (
 				85148F391F8DB2D6005F8C10 /* Hook */,
 				85148F2E1F8DB16E005F8C10 /* macSubstratePluginWeChat */,
+				851C156B1F98A4DA00E15553 /* macSubstratePluginQQ */,
 				85148F1B1F8DB0A9005F8C10 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				85148F2D1F8DB16E005F8C10 /* macSubstratePluginWeChat.bundle */,
+				851C156A1F98A4DA00E15553 /* macSubstratePluginQQ.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,6 +118,18 @@
 			name = Hook;
 			sourceTree = "<group>";
 		};
+		851C156B1F98A4DA00E15553 /* macSubstratePluginQQ */ = {
+			isa = PBXGroup;
+			children = (
+				851C156C1F98A4DA00E15553 /* Info.plist */,
+				851C15721F98A5AC00E15553 /* QQHeader.h */,
+				853D6C9B1F99F7E5000E063D /* SubstratePluginQQ.h */,
+				853D6C9C1F99F7E5000E063D /* SubstratePluginQQ.mm */,
+				851C15701F98A52D00E15553 /* main.mm */,
+			);
+			path = macSubstratePluginQQ;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -111,6 +148,23 @@
 			name = macSubstratePluginWeChat;
 			productName = macSubstratePluginWeChat;
 			productReference = 85148F2D1F8DB16E005F8C10 /* macSubstratePluginWeChat.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		851C15691F98A4DA00E15553 /* macSubstratePluginQQ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 851C156F1F98A4DA00E15553 /* Build configuration list for PBXNativeTarget "macSubstratePluginQQ" */;
+			buildPhases = (
+				851C15661F98A4DA00E15553 /* Sources */,
+				851C15671F98A4DA00E15553 /* Frameworks */,
+				851C15681F98A4DA00E15553 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = macSubstratePluginQQ;
+			productName = macSubstratePluginQQ;
+			productReference = 851C156A1F98A4DA00E15553 /* macSubstratePluginQQ.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -132,6 +186,11 @@
 						DevelopmentTeam = RGVUL9447Z;
 						ProvisioningStyle = Automatic;
 					};
+					851C15691F98A4DA00E15553 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = VWE2C42C86;
+						ProvisioningStyle = Manual;
+					};
 				};
 			};
 			buildConfigurationList = 85148F151F8DB0A9005F8C10 /* Build configuration list for PBXProject "macSubstratePlugins" */;
@@ -148,12 +207,20 @@
 			targets = (
 				85148F331F8DB1AE005F8C10 /* macSubstratePlugins */,
 				85148F2C1F8DB16E005F8C10 /* macSubstratePluginWeChat */,
+				851C15691F98A4DA00E15553 /* macSubstratePluginQQ */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		85148F2B1F8DB16E005F8C10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		851C15681F98A4DA00E15553 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -172,6 +239,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		851C15661F98A4DA00E15553 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				853D6C9D1F99F7E5000E063D /* SubstratePluginQQ.mm in Sources */,
+				851C15711F98A52D00E15553 /* main.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -179,6 +255,11 @@
 			isa = PBXTargetDependency;
 			target = 85148F2C1F8DB16E005F8C10 /* macSubstratePluginWeChat */;
 			targetProxy = 85148F371F8DB1BF005F8C10 /* PBXContainerItemProxy */;
+		};
+		851C15741F98B6CA00E15553 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 851C15691F98A4DA00E15553 /* macSubstratePluginQQ */;
+			targetProxy = 851C15731F98B6CA00E15553 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -334,6 +415,38 @@
 			};
 			name = Release;
 		};
+		851C156D1F98A4DA00E15553 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application: ZongQuan Wang (VWE2C42C86)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VWE2C42C86;
+				INFOPLIST_FILE = macSubstratePluginQQ/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gokustudio.macSubstratePluginQQ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		851C156E1F98A4DA00E15553 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application: ZongQuan Wang (VWE2C42C86)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VWE2C42C86;
+				INFOPLIST_FILE = macSubstratePluginQQ/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gokustudio.macSubstratePluginQQ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -360,6 +473,15 @@
 			buildConfigurations = (
 				85148F351F8DB1AE005F8C10 /* Debug */,
 				85148F361F8DB1AE005F8C10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		851C156F1F98A4DA00E15553 /* Build configuration list for PBXNativeTarget "macSubstratePluginQQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				851C156D1F98A4DA00E15553 /* Debug */,
+				851C156E1F98A4DA00E15553 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -6,8 +6,6 @@
 	<string>en</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
-	<key>CFBundleIconFile</key>
-	<string></string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -15,29 +13,25 @@
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundlePackageType</key>
-	<string>APPL</string>
+	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.3</string>
+	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1.0.3</string>
-	<key>LSMinimumSystemVersion</key>
-	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
+	<string>1.0</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2017 GoKuStudio. All rights reserved.</string>
-	<key>NSMainNibFile</key>
-	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
-	<string>NSApplication</string>
-	<key>LSUIElement</key>
-	<true/>
-	<key>SMPrivilegedExecutables</key>
+	<string></string>
+	<key>macSubstratePlugin</key>
 	<dict>
-		<key>com.gokustudio.macSubstrateInstaller</key>
-		<string>identifier &quot;com.gokustudio.macSubstrateInstaller&quot;</string>
-		<key>com.gokustudio.macSubstrateHelper</key>
-		<string>identifier &quot;com.gokustudio.macSubstrateHelper&quot;</string>
+		<key>AuthorEmail</key>
+		<string>wzq.goku@gmail.com</string>
+		<key>AuthorName</key>
+		<string>闷骚的悟空</string>
+		<key>Description</key>
+		<string>QQ Tweak: 防止撤回</string>
+		<key>TargetAppBundleID</key>
+		<string>com.tencent.qq</string>
 	</dict>
-	<key>SUFeedURL</key>
-	<string>https://raw.githubusercontent.com/wzqcongcong/macSubstrate/master/Release/appcast.xml</string>
 </dict>
 </plist>

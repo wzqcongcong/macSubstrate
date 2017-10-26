@@ -1,6 +1,6 @@
 //
 //  SubstratePluginWeChat.m
-//  macSubstratePlugins
+//  macSubstratePluginWeChat
 //
 //  Created by GoKu on 11/10/2017.
 //  Copyright © 2017 GoKuStudio. All rights reserved.

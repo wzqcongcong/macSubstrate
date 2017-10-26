@@ -129,7 +129,16 @@ BOOL const kLoginItemEnabledDefaultValue        = NO;
     }
     
     NSString *appName = [app.localizedInfoDictionary valueForKey:@"CFBundleDisplayName"];
-    return (appName ?: [app.localizedInfoDictionary valueForKey:@"CFBundleName"]);
+    if (!appName) {
+        appName = [app.localizedInfoDictionary valueForKey:@"CFBundleName"];
+    }
+    if (!appName) {
+        appName = [app.infoDictionary valueForKey:@"CFBundleDisplayName"];
+    }
+    if (!appName) {
+        appName = [app.infoDictionary valueForKey:@"CFBundleName"];
+    }
+    return appName;
 }
 
 + (NSImage *)getAppIconFromBundleID:(NSString *)bundleID
