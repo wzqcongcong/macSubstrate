@@ -79,6 +79,8 @@ I also make a [plugin for WeChat](Plugins/macSubstratePluginWeChat.bundle.zip):
 
 * Send you a notification when you receive a *HongBao* message.
 
+* Send you a notification when you receive a message containing customized keywords.
+
 * Anti-recall message and send you a notification.
 
 Welcome pull requests of your own plugins to [Plugins](Plugins) :)
